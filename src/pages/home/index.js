@@ -14,6 +14,25 @@ class Home extends React.Component{
             recentItems: 3
         };
         this.recentSlider = React.createRef();
+
+        this.screenResize = this.onScreenResize.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.screenResize);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener(this.screenResize);
+    }
+
+    onScreenResize(){
+        if(window.innerWidth > 992)
+            this.setState({recentItems: 3});
+        else if(window.innerWidth > 768)
+            this.setState({recentItems: 2});
+        else
+            this.setState({recentItems: 1})
     }
 
     setSearchFilter(key, e){
