@@ -20,16 +20,16 @@
 
 
 ******************************/
-
-/***********
-1. Fonts
-***********/
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900');
-
 /*********************************
 2. Body and some general stuff
 *********************************/
+
+:root {
+	/*--main-color: #15668c;*/
+	/*--secondary-color: #ff9500;*/
+	--main-color: #3f6fce;
+	--secondary-color: #32fa95;
+}
 
 *
 {
@@ -243,7 +243,7 @@ section
 {
 	width: 193px;
 	height: 72px;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 	text-align: center;
 	border-radius: 36px;
 	-webkit-transition: all 200ms ease;
@@ -291,10 +291,9 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #3f6fce;
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 	z-index: 200;
 	border-bottom: solid 1px transparent;
-    border-image: linear-gradient(to right, #487fee, #32fa95);
     border-image-slice: 1;
     -webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -313,7 +312,7 @@ section
 }
 .header.scrolled
 {
-	background: rgba(63,111,206,0.85);
+	background: linear-gradient(to right, rgba(72, 127, 238, 0.7), rgba(50, 250, 149, 0.7));
 }
 .header.scrolled .header_content
 {
@@ -353,13 +352,13 @@ section
 .main_nav ul li.active a,
 .main_nav ul li a:hover
 {
-	color: #2cd983;
+	color: var(--secondary-color);
 }
 .phone_num
 {
 	height: 43px;
     border-radius: 22px;
-    background: linear-gradient(to right, #487fee, #32fa95);
+    background: linear-gradient(to right, #487fee, var(--secondary-color));
     padding: 2px;
     overflow: hidden;
 }
@@ -369,7 +368,7 @@ section
 	height: 100%;
 	padding-left: 16px;
 	padding-right: 18px;
-	background: #3f6fce;
+	background: var(--main-color);
 	border-radius: 20px;
 }
 .phone_num span
@@ -409,7 +408,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 	z-index: 201;
 	opacity: 0;
 	visibility: hidden;
@@ -508,7 +507,7 @@ section
 .menu_close_container:hover .menu_close,
 .menu_close_container:hover .menu_close::after
 {
-	background: #3f6fce;
+	background: var(--main-color);
 }
 .menu_phone
 {
@@ -592,14 +591,14 @@ section
 .home_details
 {
 	display: inline-block;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 	border-radius: 16px;
 	padding-top: 3px;
 	margin-top: 8px;
 }
 .home_details_list
 {
-	height: 32px;
+	min-height: 32px;
 	padding-left: 26px;
 	padding-right: 44px;
 }
@@ -720,7 +719,7 @@ section
 	font-weight: 700;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 }
 
 /*********************************
@@ -841,13 +840,13 @@ section
 }
 .recent_item_title a:hover
 {
-	color: #3f6fce;
+	color: var(--main-color);
 }
 .recent_item_price
 {
 	font-size: 16px;
 	font-weight: 600;
-	color: #3f6fce;
+	color: var(--main-color);
 	line-height: 0.75;
 	margin-top: 21px;
 }
@@ -888,7 +887,7 @@ section
 }
 .recent_item:hover .recent_item_footer
 {
-	background: #3f6fce;
+	background: var(--main-color);
 }
 .recent_button
 {
@@ -932,7 +931,7 @@ section
 }
 .recent_slider_nav:hover
 {
-	background: #3f6fce;
+	background: var(--main-color);
 }
 .recent_slider_nav:hover i
 {
@@ -1081,7 +1080,7 @@ section
 {
 	font-size: 15px;
 	font-weight: 600;
-	color: #3f6fce;
+	color: var(--main-color);
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -1224,7 +1223,7 @@ section
 	font-weight: 700;
 	cursor: pointer;
 	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, #487fee, var(--secondary-color));
 }
 .newsletter_button:active
 {
@@ -1243,7 +1242,7 @@ section
 .footer_main
 {
 	width: 100%;
-	background: #3f6fce;
+	background: var(--main-color);
 	padding-top: 80px;
 	padding-bottom: 72px;
 }

@@ -10,16 +10,16 @@ class Home extends React.Component{
             selectedCity: "",
             bedrooms: "",
             bathrooms: "",
-            searchFlag: false
-        }
-
+            searchFlag: false,
+            recentItems: 3
+        };
         this.recentSlider = React.createRef();
     }
 
     setSearchFilter(key, e){
         this.setState({[key]: e.target.value});
     }
-    
+
     searchProperties(){
         this.setState({searchFlag: true});
     }
@@ -32,10 +32,11 @@ class Home extends React.Component{
         };
 
         const recentOptions = {
-            items: 3,
+            items: this.state.recentItems,
             rewind: true,
             autoplay: true
         };
+
         return(
             <div className="super_container">
                 <header className="header">
@@ -105,23 +106,23 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Properties in your city</div>
-                                                    {/* <div className="home_details">
+                                                    <div className="home_title">Proparties in your city</div>
+                                                    <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_1.png" alt=""/></div>
                                                                 <span> 650 Ftsq</span>
                                                             </li>
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_2.png" alt=""/></div>
                                                                 <span> 3 Bedrooms</span>
                                                             </li>
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_3.png" alt=""/></div>
                                                                 <span> 2 Bathrooms</span>
                                                             </li>
                                                         </ul>
-                                                    </div> */}
+                                                    </div>
                                                     {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
@@ -139,23 +140,23 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Properties in your city</div>
-                                                    {/* <div className="home_details">
+                                                    <div className="home_title">Proparties in your city</div>
+                                                    <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_1.png" alt=""/></div>
                                                                 <span> 650 Ftsq</span>
                                                             </li>
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_2.png" alt=""/></div>
                                                                 <span> 3 Bedrooms</span>
                                                             </li>
-                                                            <li>
+                                                            <li className="text-center">
                                                                 <div className="home_details_image"><img src="images/icon_3.png" alt=""/></div>
                                                                 <span> 2 Bathrooms</span>
                                                             </li>
                                                         </ul>
-                                                    </div> */}
+                                                    </div>
                                                     {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
@@ -173,23 +174,23 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Properties in your city</div>
-                                                    {/*<div className="home_details">*/}
-                                                    {/*    <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">*/}
-                                                    {/*        <li>*/}
-                                                    {/*            <div className="home_details_image"><img src="images/icon_1.png" alt=""/></div>*/}
-                                                    {/*            <span> 650 Ftsq</span>*/}
-                                                    {/*        </li>*/}
-                                                    {/*        <li>*/}
-                                                    {/*            <div className="home_details_image"><img src="images/icon_2.png" alt=""/></div>*/}
-                                                    {/*            <span> 3 Bedrooms</span>*/}
-                                                    {/*        </li>*/}
-                                                    {/*        <li>*/}
-                                                    {/*            <div className="home_details_image"><img src="images/icon_3.png" alt=""/></div>*/}
-                                                    {/*            <span> 2 Bathrooms</span>*/}
-                                                    {/*        </li>*/}
-                                                    {/*    </ul>*/}
-                                                    {/*</div>*/}
+                                                    <div className="home_title">Proparties in your city</div>
+                                                    <div className="home_details">
+                                                        <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
+                                                            <li className="text-center">
+                                                                <div className="home_details_image"><img src="images/icon_1.png" alt=""/></div>
+                                                                <span> 650 Ftsq</span>
+                                                            </li>
+                                                            <li className="text-center">
+                                                                <div className="home_details_image"><img src="images/icon_2.png" alt=""/></div>
+                                                                <span> 3 Bedrooms</span>
+                                                            </li>
+                                                            <li className="text-center">
+                                                                <div className="home_details_image"><img src="images/icon_3.png" alt=""/></div>
+                                                                <span> 2 Bathrooms</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                     {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
@@ -209,7 +210,7 @@ class Home extends React.Component{
                             <div className="col">
                                 <div className="home_search_container">
                                     <div className="home_search_content">
-                                        <form action="#" className="search_form d-flex flex-row align-items-start justfy-content-start">
+                                        <div className="search_form d-flex flex-row align-items-start justfy-content-start">
                                             <div className="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
                                                 <div className="flex-grow-1" style={{flexGrow: 1}}>
                                                     <select value={this.state.selectedCity || "City"} onChange={this.setSearchFilter.bind(this, "selectedCity")}
@@ -231,7 +232,7 @@ class Home extends React.Component{
                                                     </select>
                                                 </div>
                                                 <div className="flex-grow-1" style={{flexGrow: 1}}>
-                                                    <select value={this.state.bathrooms || "bathrooms"} onChange={this.setSearchFilter.bind(this, "bathrooms")} 
+                                                    <select value={this.state.bathrooms || "bathrooms"} onChange={this.setSearchFilter.bind(this, "bathrooms")}
                                                     className="search_form_select">
                                                         <option value="bathrooms" disabled>Bathrooms</option>
                                                         <option value="1">1</option>
@@ -241,7 +242,7 @@ class Home extends React.Component{
                                                 </div>
                                             </div>
                                             <button className="search_form_button ml-auto" onClick={this.searchProperties.bind(this)}>search</button>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
