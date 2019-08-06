@@ -42,7 +42,7 @@ class Home extends React.Component{
                                     </nav>
                                     <div className="phone_num ml-auto">
                                         <div className="phone_num_inner">
-                                            <img src="images/phone.png" alt="" /><span>652-345 3222 11</span>
+                                            <img src="images/phone.png" alt="" /><span>+91 9730-000-494</span>
                                         </div>
                                     </div>
                                     <div className="hamburger ml-auto"><i className="fa fa-bars" aria-hidden="true"></i></div>
@@ -72,7 +72,7 @@ class Home extends React.Component{
                             <li className="menu_item"><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div className="menu_phone"><span>call us: </span>652 345 3222 11</div>
+                    <div className="menu_phone"><span>call us: </span>+91 9730-000-494</div>
                 </div>
 
 
@@ -89,8 +89,8 @@ class Home extends React.Component{
                                         <div className="row">
                                             <div className="col">
                                                 <div className="slide_content">
-                                                    <div className="home_subtitle">super offer</div>
-                                                    <div className="home_title">Villa with sea view</div>
+                                                    {/*<div className="home_subtitle">Dream</div>*/}
+                                                    <div className="home_title">Proparties in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -107,7 +107,7 @@ class Home extends React.Component{
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div className="home_price">$ 1. 245 999</div>
+                                                    {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
                                         </div>
@@ -123,8 +123,8 @@ class Home extends React.Component{
                                         <div className="row">
                                             <div className="col">
                                                 <div className="slide_content">
-                                                    <div className="home_subtitle">super offer</div>
-                                                    <div className="home_title">Villa with sea view</div>
+                                                    {/*<div className="home_subtitle">Dream</div>*/}
+                                                    <div className="home_title">Proparties in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -141,7 +141,7 @@ class Home extends React.Component{
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div className="home_price">$ 1. 245 999</div>
+                                                    {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
                                         </div>
@@ -157,8 +157,8 @@ class Home extends React.Component{
                                         <div className="row">
                                             <div className="col">
                                                 <div className="slide_content">
-                                                    <div className="home_subtitle">super offer</div>
-                                                    <div className="home_title">Villa with sea view</div>
+                                                    {/*<div className="home_subtitle">Dream</div>*/}
+                                                    <div className="home_title">Property in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -175,7 +175,7 @@ class Home extends React.Component{
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div className="home_price">$ 1. 245 999</div>
+                                                    {/*<div className="home_price">$ 1. 245 999</div>*/}
                                                 </div>
                                             </div>
                                         </div>
@@ -272,7 +272,7 @@ class Home extends React.Component{
                                                     <div className="recent_item_body text-center">
                                                         <div className="recent_item_location">Miami</div>
                                                         <div className="recent_item_title"><a href="property.html">Sea view property</a></div>
-                                                        <div className="recent_item_price">$ 1. 234 981</div>
+                                                        {/*<div className="recent_item_price">$ 1. 234 981</div>*/}
                                                     </div>
                                                     <div className="recent_item_footer d-flex flex-row align-items-center justify-content-start">
                                                         <div><div className="recent_icon"><img src="images/icon_1.png" alt=""/></div><span>650 Ftsq</span></div>
@@ -389,7 +389,7 @@ class Home extends React.Component{
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <div className="section_title">Find properties in these cities</div>
+                                <div className="section_title">Listed Properties</div>
                                 <div className="section_subtitle">Search your dream home</div>
                             </div>
                         </div>
@@ -402,8 +402,8 @@ class Home extends React.Component{
                             <img src="images/city_1.jpg" alt="https://unsplash.com/@dnevozhai"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -413,8 +413,8 @@ class Home extends React.Component{
                             <img src="images/city_2.jpg" alt="https://unsplash.com/@lachlanjdempsey"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -424,8 +424,8 @@ class Home extends React.Component{
                             <img src="images/city_3.jpg" alt="https://unsplash.com/@hellolightbulb"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -435,8 +435,8 @@ class Home extends React.Component{
                             <img src="images/city_4.jpg" alt="https://unsplash.com/@justinbissonbeck"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -446,8 +446,8 @@ class Home extends React.Component{
                             <img src="images/city_5.jpg" alt="https://unsplash.com/@claudiotrigueros"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -457,8 +457,8 @@ class Home extends React.Component{
                             <img src="images/city_6.jpg" alt="https://unsplash.com/@andersjilden"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -468,8 +468,8 @@ class Home extends React.Component{
                             <img src="images/city_7.jpg" alt="https://unsplash.com/@sawyerbengtson"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -479,8 +479,8 @@ class Home extends React.Component{
                             <img src="images/city_8.jpg" alt="https://unsplash.com/@mathewwaters"/>
                             <div className="city_overlay">
                                 <a href="#" className="d-flex flex-column align-items-center justify-content-center">
-                                    <div className="city_title">Ibiza Town</div>
-                                    <div className="city_subtitle">Rentals from $450/month</div>
+                                    <div className="city_title">Property name</div>
+                                    <div className="city_subtitle">Details</div>
                                 </a>
                             </div>
                         </div>
@@ -625,7 +625,7 @@ class Home extends React.Component{
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>
-                                    <div className="footer_phone ml-auto"><span>call us: </span>652 345 3222 11</div>
+                                    <div className="footer_phone ml-auto"><span>call us: </span>+91 9730-000-494</div>
                                 </div>
                             </div>
                         </div>
