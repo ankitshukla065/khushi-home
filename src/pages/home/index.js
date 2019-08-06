@@ -493,7 +493,7 @@ class Home extends React.Component{
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <div className="section_title">What our clients say</div>
+                                <div className="section_title">What our customer say</div>
                                 <div className="section_subtitle">Search your dream home</div>
                             </div>
                         </div>
@@ -504,8 +504,8 @@ class Home extends React.Component{
                                 <div className="testimonial">
                                     <div className="testimonial_title">Amazing home for me</div>
                                     <div className="testimonial_text">Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</div>
-                                    <div className="testimonial_author_image"><img src="images/testimonial_1.jpg" alt=""/></div>
-                                    <div className="testimonial_author"><a href="#">Diane Smith</a><span>, Client</span></div>
+                                    <div className="testimonial_author_image"><img src="images/testimonial_1.png" alt=""/></div>
+                                    <div className="testimonial_author"><a href="#">Rajat Thakur</a><span>, Client</span></div>
                                     <div className="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
                                 </div>
                             </div>
@@ -515,8 +515,8 @@ class Home extends React.Component{
                                 <div className="testimonial">
                                     <div className="testimonial_title">Friendly Realtors</div>
                                     <div className="testimonial_text">Nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna. Pellentesque sit amet tellus blandit.</div>
-                                    <div className="testimonial_author_image"><img src="images/testimonial_2.jpg" alt=""/></div>
-                                    <div className="testimonial_author"><a href="#">Michael Duncan</a><span>, Client</span></div>
+                                    <div className="testimonial_author_image"><img src="images/testimonial_2.png" alt=""/></div>
+                                    <div className="testimonial_author"><a href="#">Karan Singh</a><span>, Client</span></div>
                                     <div className="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
                                 </div>
                             </div>
@@ -526,8 +526,8 @@ class Home extends React.Component{
                                 <div className="testimonial">
                                     <div className="testimonial_title">Very good communication</div>
                                     <div className="testimonial_text">Retiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</div>
-                                    <div className="testimonial_author_image"><img src="images/testimonial_3.jpg" alt=""/></div>
-                                    <div className="testimonial_author"><a href="#">Shawn Gaines</a><span>, Client</span></div>
+                                    <div className="testimonial_author_image"><img src="images/testimonial_3.png" alt=""/></div>
+                                    <div className="testimonial_author"><a href="#">Mandar Patil</a><span>, Client</span></div>
                                     <div className="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
                                 </div>
                             </div>
@@ -538,27 +538,27 @@ class Home extends React.Component{
 
 
 
-                <div className="newsletter">
-                    <div className="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <div className="newsletter_content d-flex flex-lg-row flex-column align-items-start justify-content-start">
-                                    <div className="newsletter_title_container">
-                                        <div className="newsletter_title">Are you buying or selling?</div>
-                                        <div className="newsletter_subtitle">Search your dream home</div>
-                                    </div>
-                                    <div className="newsletter_form_container">
-                                        <form action="#" className="newsletter_form">
-                                            <input type="email" className="newsletter_input" placeholder="Your e-mail address" required="required"/>
-                                            <button className="newsletter_button">subscribe now</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="newsletter">*/}
+                {/*    <div className="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/newsletter.jpg" data-speed="0.8"></div>*/}
+                {/*    <div className="container">*/}
+                {/*        <div className="row">*/}
+                {/*            <div className="col">*/}
+                {/*                <div className="newsletter_content d-flex flex-lg-row flex-column align-items-start justify-content-start">*/}
+                {/*                    <div className="newsletter_title_container">*/}
+                {/*                        <div className="newsletter_title">Are you buying or selling?</div>*/}
+                {/*                        <div className="newsletter_subtitle">Search your dream home</div>*/}
+                {/*                    </div>*/}
+                {/*                    <div className="newsletter_form_container">*/}
+                {/*                        <form action="#" className="newsletter_form">*/}
+                {/*                            <input type="email" className="newsletter_input" placeholder="Your e-mail address" required="required"/>*/}
+                {/*                            <button className="newsletter_button" >Contact us</button>*/}
+                {/*                        </form>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
 
 
 
@@ -569,64 +569,47 @@ class Home extends React.Component{
                                 <div className="col-lg-3">
                                     <div className="footer_logo"><a href="#"><img src="images/logo_large.png" alt=""/></a></div>
                                 </div>
-                                <div className="col-lg-9 d-flex flex-column align-items-start justify-content-end">
-                                    <div className="footer_title">Latest Properties</div>
-                                </div>
+                                {/*<div className="col-lg-9 d-flex flex-column align-items-start justify-content-end">*/}
+                                {/*    <div className="footer_title">Latest Properties</div>*/}
+                                {/*</div>*/}
                             </div>
                             <div className="row">
                                 <div className="col-lg-3 footer_col">
                                     <div className="footer_about">
-                                        <div className="footer_about_text">Donec in tempus leo. Aenean ultricies mauris sed quam lacinia lobortis. Cras ut vestibulum enim, in gravida nulla. Curab itur ornare nisl at sagittis cursus.</div>
+                                        <div className="footer_about_text">
+                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.                                        </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-3 footer_col">
-                                    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">
-                                        <div><div className="footer_latest_image"><img src="images/footer_latest_1.jpg" alt=""/></div></div>
-                                        <div className="footer_latest_content">
-                                            <div className="footer_latest_location">Miami</div>
-                                            <div className="footer_latest_name"><a href="#">Sea view property</a></div>
-                                            <div className="footer_latest_price">$ 1. 234 981</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 footer_col">
-                                    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">
-                                        <div><div className="footer_latest_image"><img src="images/footer_latest_2.jpg" alt=""/></div></div>
-                                        <div className="footer_latest_content">
-                                            <div className="footer_latest_location">Miami</div>
-                                            <div className="footer_latest_name"><a href="#">Town House</a></div>
-                                            <div className="footer_latest_price">$ 1. 234 981</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 footer_col">
-                                    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">
-                                        <div><div className="footer_latest_image"><img src="images/footer_latest_3.jpg" alt=""/></div></div>
-                                        <div className="footer_latest_content">
-                                            <div className="footer_latest_location">Miami</div>
-                                            <div className="footer_latest_name"><a href="#">Modern House</a></div>
-                                            <div className="footer_latest_price">$ 1. 234 981</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="footer_bar">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col">
-                                    <div className="footer_nav">
-                                        <ul>
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="#">About us</a></li>
-                                            <li><a href="properties.html">Properties</a></li>
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                    <div className="footer_phone ml-auto"><span>call us: </span>+91 9730-000-494</div>
-                                </div>
+                                {/*<div className="col-lg-3 footer_col">*/}
+                                {/*    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">*/}
+                                {/*        <div><div className="footer_latest_image"><img src="images/footer_latest_1.jpg" alt=""/></div></div>*/}
+                                {/*        <div className="footer_latest_content">*/}
+                                {/*            <div className="footer_latest_location">Miami</div>*/}
+                                {/*            <div className="footer_latest_name"><a href="#">Sea view property</a></div>*/}
+                                {/*            <div className="footer_latest_price">$ 1. 234 981</div>*/}
+                                {/*        </div>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                {/*<div className="col-lg-3 footer_col">*/}
+                                {/*    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">*/}
+                                {/*        <div><div className="footer_latest_image"><img src="images/footer_latest_2.jpg" alt=""/></div></div>*/}
+                                {/*        <div className="footer_latest_content">*/}
+                                {/*            <div className="footer_latest_location">Miami</div>*/}
+                                {/*            <div className="footer_latest_name"><a href="#">Town House</a></div>*/}
+                                {/*            <div className="footer_latest_price">$ 1. 234 981</div>*/}
+                                {/*        </div>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                {/*<div className="col-lg-3 footer_col">*/}
+                                {/*    <div className="footer_latest d-flex flex-row align-items-start justify-content-start">*/}
+                                {/*        <div><div className="footer_latest_image"><img src="images/footer_latest_3.jpg" alt=""/></div></div>*/}
+                                {/*        <div className="footer_latest_content">*/}
+                                {/*            <div className="footer_latest_location">Miami</div>*/}
+                                {/*            <div className="footer_latest_name"><a href="#">Modern House</a></div>*/}
+                                {/*            <div className="footer_latest_price">$ 1. 234 981</div>*/}
+                                {/*        </div>*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
                             </div>
                         </div>
                     </div>
