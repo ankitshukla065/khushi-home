@@ -6,7 +6,22 @@ class Home extends React.Component{
     constructor(props){
         super(props);
 
+        this.state = {
+            selectedCity: "",
+            bedrooms: "",
+            bathrooms: "",
+            searchFlag: false
+        }
+
         this.recentSlider = React.createRef();
+    }
+
+    setSearchFilter(key, e){
+        this.setState({[key]: e.target.value});
+    }
+    
+    searchProperties(){
+        this.setState({searchFlag: true});
     }
 
     render(){
@@ -90,7 +105,7 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Proparties in your city</div>
+                                                    <div className="home_title">Properties in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -124,7 +139,7 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Proparties in your city</div>
+                                                    <div className="home_title">Properties in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -158,7 +173,7 @@ class Home extends React.Component{
                                             <div className="col">
                                                 <div className="slide_content">
                                                     {/*<div className="home_subtitle">Dream</div>*/}
-                                                    <div className="home_title">Property in your city</div>
+                                                    <div className="home_title">Properties in your city</div>
                                                     <div className="home_details">
                                                         <ul className="home_details_list d-flex flex-row align-items-center justify-content-start">
                                                             <li>
@@ -196,50 +211,36 @@ class Home extends React.Component{
                                     <div className="home_search_content">
                                         <form action="#" className="search_form d-flex flex-row align-items-start justfy-content-start">
                                             <div className="search_form_content d-flex flex-row align-items-start justfy-content-start flex-wrap">
-                                                <div>
-                                                    <select className="search_form_select">
-                                                        <option disabled selected>For rent</option>
-                                                        <option>Yes</option>
-                                                        <option>No</option>
+                                                <div className="flex-grow-1" style={{flexGrow: 1}}>
+                                                    <select value={this.state.selectedCity || "City"} onChange={this.setSearchFilter.bind(this, "selectedCity")}
+                                                    className="search_form_select">
+                                                        <option value="City" disabled>City</option>
+                                                        <option value="nagpur">Nagpur</option>
+                                                        <option value="pune">Pune</option>
+                                                        <option value="mumbai">Mumbai</option>
                                                     </select>
                                                 </div>
-                                                <div>
-                                                    <select className="search_form_select">
-                                                        <option disabled selected>All types</option>
-                                                        <option>Type 1</option>
-                                                        <option>Type 2</option>
-                                                        <option>Type 3</option>
-                                                        <option>Type 4</option>
+                                                <div className="flex-grow-1" style={{flexGrow: 1}}>
+                                                    <select value={this.state.bedrooms || "bedrooms"} onChange={this.setSearchFilter.bind(this, "bedrooms")}
+                                                    className="search_form_select">
+                                                        <option value="bedrooms" disabled>Bedrooms</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
                                                     </select>
                                                 </div>
-                                                <div>
-                                                    <select className="search_form_select">
-                                                        <option disabled selected>City</option>
-                                                        <option>New York</option>
-                                                        <option>Paris</option>
-                                                        <option>Amsterdam</option>
-                                                        <option>Rome</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <select className="search_form_select">
-                                                        <option disabled selected>Bedrooms</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <select className="search_form_select">
-                                                        <option disabled selected>Bathrooms</option>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
+                                                <div className="flex-grow-1" style={{flexGrow: 1}}>
+                                                    <select value={this.state.bathrooms || "bathrooms"} onChange={this.setSearchFilter.bind(this, "bathrooms")} 
+                                                    className="search_form_select">
+                                                        <option value="bathrooms" disabled>Bathrooms</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <button className="search_form_button ml-auto">search</button>
+                                            <button className="search_form_button ml-auto" onClick={this.searchProperties.bind(this)}>search</button>
                                         </form>
                                     </div>
                                 </div>
@@ -254,7 +255,9 @@ class Home extends React.Component{
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <div className="section_title">Recent Properties</div>
+                                <div className="section_title">
+                                    {this.state.searchFlag ? "10 Properties found" : "Recent Properties"}
+                                    </div>
                                 <div className="section_subtitle">Search your dream home</div>
                             </div>
                         </div>
@@ -266,7 +269,8 @@ class Home extends React.Component{
                                             <div className="recent_item">
                                                 <div className="recent_item_inner">
                                                     <div className="recent_item_image">
-                                                        <img src="images/property_1.jpg" alt=""/>
+                                                        {!this.state.searchFlag && <img src="images/property_1.jpg" alt=""/>}
+                                                        {this.state.searchFlag && <img src="images/property_6.jpg" alt=""/>}
                                                         <div className="tag_featured property_tag"><a href="#">Featured</a></div>
                                                     </div>
                                                     <div className="recent_item_body text-center">
@@ -288,7 +292,8 @@ class Home extends React.Component{
                                             <div className="recent_item">
                                                 <div className="recent_item_inner">
                                                     <div className="recent_item_image">
-                                                        <img src="images/property_2.jpg" alt=""/>
+                                                    {!this.state.searchFlag && <img src="images/property_2.jpg" alt=""/>}
+                                                        {this.state.searchFlag && <img src="images/property_7.jpg" alt=""/>}
                                                         <div className="tag_offer property_tag"><a href="#">Offer</a></div>
                                                     </div>
                                                     <div className="recent_item_body text-center">
@@ -310,7 +315,8 @@ class Home extends React.Component{
                                             <div className="recent_item">
                                                 <div className="recent_item_inner">
                                                     <div className="recent_item_image">
-                                                        <img src="images/property_3.jpg" alt=""/>
+                                                    {!this.state.searchFlag && <img src="images/property_3.jpg" alt=""/>}
+                                                        {this.state.searchFlag && <img src="images/property_8.jpg" alt=""/>}
                                                         <div className="tag_featured property_tag"><a href="#">Featured</a></div>
                                                     </div>
                                                     <div className="recent_item_body text-center">
@@ -327,7 +333,7 @@ class Home extends React.Component{
                                             </div>
                                         </div>
 
-                                        <div className="owl-item">
+                                        {!this.state.searchFlag && <div className="owl-item">
                                             <div className="recent_item">
                                                 <div className="recent_item_inner">
                                                     <div className="recent_item_image">
@@ -346,9 +352,8 @@ class Home extends React.Component{
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div className="owl-item">
+                                        </div>}
+                                        {!this.state.searchFlag && <div className="owl-item">
                                             <div className="recent_item">
                                                 <div className="recent_item_inner">
                                                     <div className="recent_item_image">
@@ -367,7 +372,7 @@ class Home extends React.Component{
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>}
                                     </OwlCarousel>
 
                                     <div className="recent_slider_nav_container d-flex flex-row align-items-start justify-content-start">
