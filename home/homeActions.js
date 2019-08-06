@@ -1,1 +1,0 @@
-import {HomeConstants} from './homeConstants';
